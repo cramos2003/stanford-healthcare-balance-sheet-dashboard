@@ -1,0 +1,3 @@
+This project is a self hosted dashboard. I used an old computer I had to host it via linux (debian) and apache2. The computer also has an internal flask api to make calls to the internal server database and dynamically load all db content to the web page.
+This projects main focus was to see if I was able to turn an old computer into a server and host an application with a database and render the db content on the web page using graphs from charts.js.
+The repository contains a scraper which scrapes stanfords balance sheets on their website and renders data from there assets, current assets, liabilities and current liabilities, along with data that could be calculated using these 4 items.
