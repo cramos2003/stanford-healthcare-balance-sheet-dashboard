@@ -16,7 +16,6 @@ import re
 from pipeline import PostgresPipeline
 
 # For access to google gemini model for text summarization
-# gemini api key 'AIzaSyAA-H2nUEZt9LGaX7xF7QY3XYSk1jXn_-E'
 import google.generativeai as genai
 
 url = 'https://stanfordhealthcare.org/about-us/bondholder-general-financial-information/audited-financial-statements.html'
@@ -60,12 +59,6 @@ class PdfScraper:
     
     def stop(self):
         self.driver.quit()
-
-def summarize(doc):
-    genai.configure(api_key='AIzaSyAA-H2nUEZt9LGaX7xF7QY3XYSk1jXn_-E')
-    model = genai.GenerativeModel('gemini-1.5-flash')
-    summary = model.generate_content(f"Generate a short summary of the following text: {doc}")
-    return summary.text
 
 def grab_all_integers(item : str):
     result = []

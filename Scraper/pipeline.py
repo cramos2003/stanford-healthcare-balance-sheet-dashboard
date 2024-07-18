@@ -3,13 +3,13 @@ import logging
 
 class PostgresPipeline(object):
     # Init
-    user = 'scraper'     # os.environ.get('DB_USER', '')
-    password = 'Computerguy21$'     # os.environ.get('DB_PASSWORD', '')
-    host = 'localhost'      # os.environ.get('DB_HOSTNAME', '')
-    database = 'scraper_playground'     # os.environ.get('DB_DATABASE', '')
-    port = 5432     # os.environ.get('DB_PORT', '')
+    user =      # os.environ.get('DB_USER', '')
+    password =      # os.environ.get('DB_PASSWORD', '')
+    host =       # os.environ.get('DB_HOSTNAME', '')
+    database =      # os.environ.get('DB_DATABASE', '')
+    port =      # os.environ.get('DB_PORT', '')
     # schema = os.environ.get('DB_SCHEMA', '')
-    insert_table = 'standford_financial'    # os.environ.get('DB_INSERT_TABLE', '')
+    insert_table =     # os.environ.get('DB_INSERT_TABLE', '')
     
     def open(self):
         try:
